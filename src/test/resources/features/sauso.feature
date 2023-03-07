@@ -52,3 +52,12 @@ Feature: saucedemo side aoutomation test
       | Sauce Labs Bike Light   |
       | Sauce Labs Bolt T-Shirt |
 
+  Scenario: user should add product to chart
+    Given user on the login page
+    When user enter user name as "standard_user"
+    And  user enter password as "secret_sauce"
+    And  user click login button
+    And user click addChart product2
+      | Sauce Labs Backpack     |
+      | Sauce Labs Bike Light   |
+      | Sauce Labs Bolt T-Shirt |
